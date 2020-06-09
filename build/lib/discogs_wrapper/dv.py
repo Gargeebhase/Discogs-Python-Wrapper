@@ -75,7 +75,7 @@ class DV(object):
 
     #TODO: test from this point
 
-    def get_all_label_releases(self,label_id,page='',per_page=''):
+    def get_all_label_releases(self,label_id,page,per_page):
         path = 'https://api.discogs.com/labels/{}/releases{}'.format(label_id)
         session.params['user-agent'] = self.unique_word
         if page!='':
